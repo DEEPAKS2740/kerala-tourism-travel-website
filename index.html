@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>kerala Tourism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        .btn {
+            background-color: #e17902;
+            color: black;
+            font-size: 15px;
+
+        }
+
+        .navbar {
+            width: 100%;
+            height: 60px;
+            background-color: #0A191F;
+        }
+
+        .heroimg {
+            position: relative;
+        }
+
+        .hero {
+            position: absolute;
+            margin-top: -700px;
+            /* margin-left: 577px; */
+            justify-content: center;
+            width: 100%;
+            height: 700px;
+            background-color: rgba(10, 25, 31, 0.64);
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .herobtn {
+            text-decoration: none;
+            color: orange;
+
+
+
+        }
+
+        .twobtn {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            padding-left: 590px;
+        }
+
+        .highlights {
+            position: absolute;
+            margin-top: -105px;
+            display: flex;
+            margin-left: 85px;
+            width: 85%;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(10, 25, 31, 0.64);
+            border-radius: 8px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .highlight {
+            text-align: center;
+        }
+
+        .hero2img {
+            display: flex;
+            gap: 50px;
+            padding-left: 100px;
+        }
+
+        .hero2 {
+            display: flex;
+            padding-left: 30px;
+            justify-content: space-between;
+        }
+
+        .hero3 {
+            width: 100%;
+
+            height: 1000px;
+            background-color: #F5EFE3;
+
+        }
+
+        .hero2img {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .destination-card {
+            flex: 1;
+            min-width: 0;
+            max-width: 300px;
+            height: 400px;
+            background-color: #071e22;
+            border: 1px solid #26383a;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .munnarimg {
+            position: relative;
+            height: 210px;
+            width: 100%;
+        }
+
+        .munnarimg img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .location-tag {
+            position: absolute;
+            top: 12px;
+            left: 10px;
+            background: #30271e;
+            color: #e9b978;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 10px;
+        }
+
+        .munnartxt {
+            padding: 12px;
+            height: 145px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .munnartxt h3 {
+            color: #fff4df;
+            font-family: Georgia, serif;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .munnartxt p {
+            color: #c5c5c5;
+            font-size: 10px;
+            line-height: 1.5;
+        }
+
+        .txtbtn1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .txtbtn1 h6 {
+            color: #e9b978;
+            font-size: 11px;
+            margin: 0;
+        }
+
+        .txtbtn1 button {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid #594b36;
+            background: transparent;
+            color: #e9b978;
+        }
+
+        .pkgtop {
+            display: flex;
+            /* text-align: center; */
+            gap: 50%;
+            align-items: center;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        .pkgcrd1 {
+            width: 350px;
+            height: 600px;
+            background-color: white;
+            color: #071e22;
+            text-align: center;
+            border-radius: 10px;
+
+        }
+
+        .bookbtn {
+            border-radius: 8px;
+            background-color: #e17902;
+            color: #071e22;
+            border: none;
+            width: 250px;
+            height: 36px;
+        }
+
+        .pkgcrd {
+            padding-left: 150px;
+            display: flex;
+            gap: 50px;
+        }
+
+        .pkgcrd2 {
+            background-color: #071e22;
+            width: 350px;
+            height: 600px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: -20px;
+            color: white;
+        }
+
+        .pkgcrd3 {
+            width: 350px;
+            height: 600px;
+            background-color: white;
+            color: #071e22;
+            text-align: center;
+            border-radius: 10px;
+
+        }
+
+        .hero4 {
+            width: 100%;
+            height: 1900px;
+            background-color: #14120D;
+        }
+
+        .imgtxt {
+            width: 500px;
+            height: 100px;
+            background-color: #1D1C14;
+            padding: 1%;
+            border-radius: 20px;
+            /* background-color: rgba(10, 25, 31, 0.64); */
+            margin-left: 60px;
+            border: 1px solid #302B20;
+        }
+
+        .kathakimg {
+            position: relative;
+            padding-top: 40px;
+            padding-left: 50px;
+        }
+
+        .imgtxt {
+            position: absolute;
+
+            margin-top: -130px;
+        }
+
+        .hero4sub {
+            display: flex;
+            gap: 30px;
+        }
+
+        .box3 {
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .imgrht {
+            padding-top: 40px;
+        }
+
+        .imgflx {
+            display: flex;
+            gap: 50px;
+            padding-left: 160px;
+        }
+
+        .hsbt {
+            position: relative;
+        }
+
+        .hsbtxt {
+            position: absolute;
+            margin-top: -55px;
+            margin-left: 30px;
+        }
+
+        .mnrimg2 {
+            position: relative;
+        }
+
+        .mnrtxt {
+            position: absolute;
+            margin-top: -55px;
+            margin-left: 30px;
+        }
+
+        .wfimg {
+            position: relative;
+        }
+
+        .wftxt {
+            position: absolute;
+            margin-top: -55px;
+            margin-left: 30px;
+        }
+
+        .imgflx2 {
+            display: flex;
+            padding-left: 160px;
+            gap: 30px;
+        }
+
+        .vrkimg {
+            position: relative;
+        }
+
+        .vrktxt {
+            position: absolute;
+            margin-top: -55px;
+            margin-left: 30px;
+        }
+
+        .kathkimg {
+            position: relative;
+        }
+
+        .kathktxt {
+            position: absolute;
+            margin-top: -55px;
+            margin-left: 30px;
+        }
+
+        .wsgimg {
+            position: relative;
+        }
+
+        .wsgtxt {
+            position: absolute;
+            margin-top: -55px;
+            margin-left: 30px;
+        }
+        .form-group select {
+    width: 285px;
+    height: 52px;
+    padding: 0 15px;
+    background-color: #292A25;
+    color: #FFF4DF;
+    border: 1px solid #9A7045;
+    border-radius: 13px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+}
+.flx3{
+    /* display: flex; */
+}
+.cont1{
+    display: flex;
+    gap: 20px;
+    
+}
+.cont2{
+    display: flex;
+    gap: 20px;
+}
+.grp1{
+    background-color: #071C24;
+    width: 690px;
+    height: 500px;
+    margin-left: 70px;
+    border-radius: 20px;
+   
+}
+.subgrp{
+    padding: 4%;
+}
+.textarea{
+   margin-left: 60px;
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar main-navbar">
+        <div class="container-fluid">
+
+            <!-- Logo - Left -->
+            <a class="navbar-brand" href="#">
+
+                <span style="color: orange;font-style: oblique;font-weight: bold; font-size: 26px;">
+                    Explore Kerala
+                    <smal style="font-size: small; color: rgb(143, 192, 192); font-weight: lighter;">GOD'S OWN
+                        COUNTRY</small>
+                </span>
+            </a>
+
+            <!-- Navigation - Center -->
+            <ul class="nav navbar-links">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#destinations">Destinations</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#packages">Packages</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Book Now - Right -->
+            <button class="btn">BOOKNOW</button>
+
+        </div>
+    </nav>
+
+
+    <div class="heroimg">
+        <img width="100%" height="700px" src="heroim2.png" alt="">
+    </div>
+
+
+    <div class="hero">
+        <button class="herobtn" style="background-color: #0A191F; border-radius: 7px; border: none;"><a
+                style="color: #e17902; text-decoration: none;" href="">✦GOD'S OWN COUNTRY.BESPOKE
+                SANCTUARIES✦</a></button>
+        <h1 style="font-family: Georgia;color: #FFF4DF;">Explore <span
+                style="color: #e17902; font-family: Cambria;">Keralam</span></h1>
+        <h2 style="font-family: serif; color: #F4D6A0;font-weight: bold;">Discover the beauty of god's own country</h2>
+        <p>From misty mountains to peaceful backwaters, experience Kerala like never <br>before through private moonlit
+            houseboats, fragrant spice trails, and tranquil <br>Ayurvedic sanctuaries.</p> <br><br>
+
+        <div class="twobtn">
+            <button style="background-color: #e17902; border-radius: 16px; border: none; width: 110px; height: 60px;"><a
+                    style="text-decoration: none;color: #0A191F;  " href=""> Explore <br> journeys ↗</a></button>
+            <div><button
+                    style="background-color: rgba(10,25, 31,0.64); border-radius: 16px; border: none; width: 200px; height: 60px; color: #e17902;"><a
+                        style="text-decoration: none; color: #e17902;" href="">Watch Film/plan <br> voyage</a></button>
+            </div>
+        </div><br><br>
+
+
+
+    </div>
+
+    <div class="highlights">
+        <div class="highlight">
+            <h3 style="color: #e17902;">♧</h3>
+            <h4>scenic beauty</h4>
+            <p style="color: #dadad8; font-size: small;">lush tropical topography</p>
+        </div>
+        <div class="highlight">
+            <h3 style="color: #e17902;">♙</h3>
+            <h4>Rich Culture</h4>
+            <p style="color: #dadad8; font-size: small;">kathakali&rituals</p>
+        </div>
+        <div class="highlight">
+            <h3 style="color: #e17902;">≋</h3>
+            <h4>Serene Backwaters</h4>
+            <p style="color: #dadad8; font-size: small;">private luxury kettuvallam</p>
+        </div>
+        <div class="highlight">
+            <h3 style="color: #e17902;">♧</h3>
+            <h4>Misty Hills</h4>
+            <p style="color: #dadad8; font-size: small;">colonial tea estate</p>
+        </div>
+
+    </div><br><br>
+
+    <div class="hero2">
+        <div>
+            <h6 style="color: #e17902;"> ICONIC SANCTUARIES</h6>
+            <h2 style="font-family:  Times New Roman;">Popular Destinations</h2>
+        </div>
+        <div>
+            <p>Hand-selected Kerala geography celebrated for exceptional <br> serenity, untouched wilderness, and
+                peerless waterfront <br> grandeur.</p>
+        </div>
+    </div><br>
+
+    <div class="hero2img">
+
+        <!-- Munnar -->
+        <div class="destination-card">
+            <div class="munnarimg">
+                <a href="">
+                    <img src="munnar.jpg" alt="Munnar">
+                </a>
+                <span class="location-tag">1,600m Altitude</span>
+            </div>
+
+            <div class="munnartxt">
+                <h3>Munnar</h3>
+                <p>Tea gardens and misty mountains with pristine valley panoramas.</p>
+
+                <div class="txtbtn1">
+                    <h6>Western Ghats</h6>
+                    <button><i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alleppey -->
+        <div class="destination-card">
+            <div class="munnarimg">
+                <a href=""><img src="bw.jpg" alt="Alleppey"></a>
+                <span class="location-tag">Vembanad Cruise</span>
+            </div>
+
+            <div class="munnartxt">
+                <h3>Alleppey</h3>
+                <p>Beautiful backwaters and private wooden houseboats along palm-fringed canals.</p>
+
+                <div class="txtbtn1">
+                    <h6>Venice of East</h6>
+                    <button><i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wayanad -->
+        <div class="destination-card">
+            <div class="munnarimg">
+                <a href=""><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT95PHe3JFUCKKXS-NrinKYYVhGu-JuEa6eOXMPNDewGu5aeAZ41dIztU&s=10"
+                        alt="Wayanad"></a>
+                <span class="location-tag">Treehouse Haven</span>
+            </div>
+
+            <div class="munnartxt">
+                <h3>Wayanad</h3>
+                <p>Lush evergreen forests, spice plantations, and cascading natural waterfalls.</p>
+
+                <div class="txtbtn1">
+                    <h6>Spice Plateau</h6>
+                    <button><i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Varkala -->
+        <div class="destination-card">
+            <div class="munnarimg">
+                <a href=""><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6z6AVJfXRheE7wTCWi_PZQjyP0VDzCTmYqhprAU_1w508YDHS31iwPrc&s=10"
+                        alt="Varkala"></a>
+                <span class="location-tag">Coastal Cliff</span>
+            </div>
+
+            <div class="munnartxt">
+                <h3>Varkala</h3>
+                <p>Beaches, dramatic red laterite cliffs and glowing Arabian Sea sunsets.</p>
+
+                <div class="txtbtn1">
+                    <h6>Arabian Coast</h6>
+                    <button><i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br>
+
+
+    <div class="hero3"><br><br>
+        <h6 style="color: #0A191F; font-size: medium; text-align: center; font-family:  monospace;">CURATED ITINERARIES
+        </h6><br>
+        <h2 style="color: #0A191F; font-family: 'Times New Roman', Times, serif; text-align: center;">All-Inclusive Tour
+            Packages</h2>
+        <p style="color: #0A191F; font-family: 'Times New Roman', Times, serif; text-align: center;">carefully
+            orchestrated travel packages balancing private luxury villas,Heritage culinary <br>tastings and effortless
+            transfers.</p><br><br><br><br>
+
+        <div class="pkgcrd">
+            <div class="pkgcrd1">
+
+                <div class="pkgtop">
+                    <h6
+                        style="color:#071C24; width:120px ;background-color:#E7EBEB; border-radius: 25px;padding: 2%; font-size: 13px;">
+                        3Days/2Nights</h6>
+                    <p style="color: #1f3d43;">♧</p>
+                </div><br>
+                <h3 style="color: #071e22; font-family: 'Playfair Display', serif;">Munnar Escape</h3>
+                <p style="color: #071e22;">Tranquil highland retreat among private tea
+                    estates and waterfall walks.</p><br>
+                <h4> <span style="font-family:Playfair Display Bold;font-size: 40px;"> ₹7999 </span>/person</h4><br>
+                <p><i style="color: #e17902;" class="fa-regular fa-circle-check"></i>Sightseeing & private scenic
+                    transfers</p>
+                <p><i style="color: #e17902;" class="fa-regular fa-circle-check"></i>
+                    Complimentary artisanal breakfast</p>
+                <br><br><br><br><br>
+                <button class="bookbtn">Book now <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+
+            <div class="pkgcrd2">
+
+                <div class="pkgtop">
+                    <h6
+                        style="color: #F7C27A; width:120px ;background-color:#343D39; border-radius: 25px;padding: 2%; font-size: 13px;">
+                        3Days/2Nights</h6>
+                    <p style="color: #1f3d43;">♧</p>
+                </div><br>
+                <h3 style="color: white; font-family: 'Playfair Display', serif;">Backwater Bliss</h3>
+                <p style="color: white;">Exclusive private houseboat journey across the tranquil canals of Alleppey
+                    .</p><br>
+                <h4> <span style="font-family:Playfair Display Bold;font-size: 40px;"> ₹9,499 /</span> per person</h4>
+                <br>
+                <p><i style="color: #e17902;" class="fa-regular fa-circle-check"></i>Private luxury wooden houseboat
+                    stay</p>
+                <p><i style="color: #e17902;" class="fa-regular fa-circle-check"></i>
+                    Authentic local village backwater <br> experience</p>
+                <p><i style="color: #e17902;" class="fa-regular fa-circle-check"></i>All traditional Kerala meals
+                    included</p>
+                <br><br><br><br>
+                <button class="bookbtn">Book now <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+
+            <div class="pkgcrd3">
+
+                <div class="pkgtop">
+                    <h6
+                        style="color: #071C24; width:120px ;background-color: #E7EBEB; border-radius: 25px;padding: 2%; font-size: 13px;">
+                        3Days/2Nights</h6>
+                    <p style="color: #1f3d43;">♧</p>
+                </div><br>
+                <h3 style="color: #071e22; font-family: 'Playfair Display', serif;">Kerala Explorer</h3>
+                <p style="color: #071e22;">The grand synthesis uniting high-altitude tea hills with canal houseboats.
+                </p><br>
+                <h4><span style="font-family:Playfair Display Bold;font-size: 40px;"> ₹14,999 </span>/ per person</h4>
+                <br>
+                <p><i style="color: #e17902;" class="fa-regular fa-circle-check"></i>Boutique heritage hotel & houseboat
+                    stay</p>
+                <p><i style="color: #e17902;" class="fa-regular fa-circle-check"></i>
+                    Guided sightseeing tours & spice sanctuary walks</p>
+                <p><i style="color: #e17902;" class="fa-regular fa-circle-check"></i>Daily breakfast and private
+                    chauffeured transfers</p>
+                <br><br>
+                <button class="bookbtn">Book now <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero4">
+        <div class="hero4sub">
+
+            <div class="kathakimg">
+                <img width="600px" height="482" style="border-radius: 15px;" src="kathak.png" alt="">
+                <div class="imgtxt">
+                    <h4 style="color: #FF914D;">Rooted in Tradition</h4>
+                    <p style="color: #E2DDD2;">preserving century-old heritage,performing arts,and <br>indigenous
+                        sanctuary forests.</p>
+                </div>
+
+            </div>
+
+            <div class="imgrht">
+                <h6 style="color: 	#FF914D;">Heritage & Authenticity</h6>
+                <h1 style="color: #FFF4DF;">Your Trusted Travel Partner in <br> Kerala</h1>
+                <p style="color: #E2DDD2;">For over 15 years, Explore Kerala has curated transformative journeys that
+                    <br> bridge travelers with the spiritual pulse, verdant landscapes, and coastal <br> serenity of
+                    southern India.</p>
+                <p style="color: #C5C0B5;">From private cedar kettuvallam houseboats to boutique spice plantation villas
+                    in Munnar and <br> Wayanad, our private voyages are guided exclusively by certified local historians
+                    and eco- <br> tourism specialists committed to sustainable preservation.</p>
+                <br><br>
+
+                <div class="box3">
+                    <div
+                        style="width: 250px;background-color: #1D1C14; height: 70px; text-align: center; border-radius: 15px; border: 1px solid #302B20;">
+                        <h4 style="color: 	#FF914D; font-family: 'Playfair Display', serif; font-size: 29px;">50,000+
+                        </h4>
+                        <p style="color: #C5C0B5; font-size: small;">Happy Voyager</p>
+                    </div>
+                    <div
+                        style="width: 180px;background-color: #1D1C14; height: 70px; text-align: center; border-radius: 15px; border: 1px solid #302B20;">
+                        <h4 style="color: 	#FF914D; font-family: 'Playfair Display', serif; font-size: 29px;">4.9/5</h4>
+                        <p style="color: #C5C0B5;font-size: small;">Guest rating</p>
+                    </div>
+                    <div
+                        style="width: 180px;background-color: #1D1C14; height: 70px; text-align: center; border-radius: 15px; border: 1px solid #302B20;">
+                        <h4 style="color: 	#FF914D; font-family: 'Playfair Display', serif; font-size: 29px;">100%</h4>
+                        <p style="color: #C5C0B5;font-size: small;">tailored journeys</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="visod">
+            <p>Visual Odyssey</p>
+            <h1>Vibrant Moments in God's Own Country</h1>
+            <p>A photographic window into mist-laden tea ridges, gilded backwater horizons, and radiant cultural
+                enactments.</p>
+
+            <div class="imgflx">
+
+                <div class="hsbt">
+                    <img style="border-radius: 16px;" width="550px" height="450px" src="bw2.png" alt="">
+                    <div class="hsbtxt">
+                        <h6>Alleppey Canals</h6>
+                        <p>Serene Kerala Houseboat Backwaters</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="mnrimg2">
+                        <img style="border-radius: 16px;" width="470px" height="200px" src="mnr2.png" alt="">
+                    </div>
+                    <div class="mnrtxt">
+                        <h6>Munnar Valleys</h6>
+                        <p>Misty Munnar Tea Plantations</p>
+                    </div><br><br>
+
+                    <div class="wfimg">
+                        <img style="border-radius: 16px;" width="470px" height="200px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlDPRCtc0Zmw2enoqAIHJUUGWi6KJiVxH0gH6mV58d8A&s=10"
+                            alt="">
+                        <div class="wftxt">
+                            <h6>Chalakudy River</h6>
+                            <p>Athirappilly Forest Cascade</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <br><br>
+
+            <div class="imgflx2">
+
+                <div class="vrkimg">
+                    <img style="border-radius: 16px;" width="350px" height="250px"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6z6AVJfXRheE7wTCWi_PZQjyP0VDzCTmYqhprAU_1w508YDHS31iwPrc&s=10"
+                        alt="">
+                    <div class="vrktxt">
+                        <h6>Arabian Shoreline</h6>
+                        <p>Red Laterite Cliffs of Varkala</p>
+                    </div>
+                </div>
+                <div class="kathkimg">
+                    <img style="border-radius: 16px;" width="350px" height="250px" src="kathak.png" alt="">
+                    <div class="kathktxt">
+                        <h6>Performing Heritage</h6>
+                        <p>Traditional Kathakali Ritual</p>
+                    </div>
+
+                </div>
+
+                <div class="wsgimg">
+                    <img style="border-radius: 16px;" width="350px" height="250px"
+                        src="https://lifeonweekends.com/wp-content/uploads/2023/05/img_0552.jpg?w=1600" alt="">
+                    <div class="wsgtxt">
+                        <h6>Highland Silence</h6>
+                        <p>Western Ghats Mountain Horizons</p>
+                    </div>
+
+                </div>
+
+            </div><br><br><b></b>
+            <div class="h6">
+                <h6>Personalized Itineraries</h6>
+                <h1>Plan Your Bespoke Voyage</h1>
+                <p>Connect with our Kerala travel concierges to tailor private houseboat cruises, plantation stays, and
+                    cultural expeditions.</p>
+            </div>
+
+            <div class="flx3">
+                <div class="grp1">
+                    <div class="subgrp">
+                <div class="cont1">
+                    <div>
+                        <h6>name</h6>
+                        <input style="width: 285px; height: 40px;border: 1px solid #9A7045;background-color: #292A25;border-radius: 13px;"  type="text">
+                    </div>
+                    <div>
+                        <h6>Email Address</h6>
+                        <input style="width: 285px; height: 40px;border: 1px solid #9A7045;background-color: #292A25;border-radius: 13px;"  type="email">
+                    </div>
+                    </div><br><br>
+                    <div class="cont2">
+                        <div>
+                             <h6>Phone Number</h6>
+                        <input style="width: 285px; height: 40px;border: 1px solid #9A7045;background-color: #292A25;border-radius: 13px;" type="number">
+                        </div>
+                       
+                    
+                    <div>
+                        <div class="form-group">
+                            <label for="destination">Preferred Destination</label>
+
+                            <select id="destination" name="destination">
+                                <option value="alleppey">Alleppey Private Backwaters</option>
+                                <option value="munnar">Munnar Misty Tea Valleys</option>
+                                <option value="varkala">Varkala Cliffs & Beaches</option>
+                                <option value="wayanad">Wayanad Rainforest Sanctuary</option>
+                                <option value="custom">Custom Multi-Destination Circuit</option>
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="textarea">
+                    <h6>Travel Notes & Special Wishes</h6>
+                    <textarea style="border: 1px solid #9A7045;background-color: #292A25;border-radius: 13px;" name="" id="" cols="55" rows="5"></textarea><br><br>
+                    <button style="width: 400px; height: 40px;border: 1px solid #9A7045;background-color: #e17902;border-radius: 13px; color: #071e22;">Send Message</button>
+                    </div>
+
+                
+
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
