@@ -234,7 +234,7 @@
 
         .hero4 {
             width: 100%;
-            height: 1900px;
+            height: 2200px;
             background-color: #14120D;
         }
 
@@ -245,7 +245,7 @@
             padding: 1%;
             border-radius: 20px;
             /* background-color: rgba(10, 25, 31, 0.64); */
-            margin-left: 60px;
+            margin-left: 30px;
             border: 1px solid #302B20;
         }
 
@@ -373,6 +373,7 @@
 }
 .grp1{
     background-color: #071C24;
+    border: 1px solid #9A7045;
     width: 690px;
     height: 500px;
     margin-left: 70px;
@@ -385,6 +386,152 @@
 .textarea{
    margin-left: 60px;
 }
+.h6{
+    text-align: center;
+}
+
+
+.phnmbr{
+    width: 400px;
+    height: 130px;
+     background-color: #071C24;
+     padding: 3%;
+     border: 1px solid #9A7045;
+     border-radius: 8px;
+
+}
+.mail{
+    width: 400px;
+    height: 130px;
+     background-color: #071C24;
+     padding: 3%;
+     border: 1px solid #9A7045;
+     border-radius: 8px;
+}
+.loctn{
+    width: 400px;
+    height: 130px;
+     background-color: #071C24;
+     padding: 3%;
+     border: 1px solid #9A7045;
+     border-radius: 8px;
+}
+.flx3{
+    display: flex;
+    gap: 40px;
+}
+
+.footer {
+    background-color: #100E08;
+    color: #FFF4DF;
+    padding: 45px 12% 25px;
+    font-family: Arial, sans-serif;
+}
+
+/* Top section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 18px;
+}
+
+.footer-brand h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #FFF4DF;
+    margin-bottom: 5px;
+}
+
+.footer-brand h2::first-letter {
+    color: #FF914D;
+}
+
+.footer-brand p {
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 450px;
+    margin: 0;
+    color: #E2DDD2;
+}
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #211F17;
+    color: #E2DDD2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #FF9417;
+    color: #100E08;
+}
+
+/* Divider */
+.footer hr {
+    border: none;
+    border-top: 1px solid #252219;
+    margin: 18px 0;
+}
+
+/* Navigation links */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    gap: 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #E2DDD2;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FF914D;
+}
+
+/* Bottom section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    margin: 0;
+    color: #E2DDD2;
+}
+
+.footer-bottom span {
+    font-size: 12px;
+    color: #FF914D;
+    letter-spacing: 0.5px;
+}
+.visod2{
+   text-align: center;
+}
+.btn1 :hover
+
     </style>
 </head>
 
@@ -453,7 +600,7 @@
             houseboats, fragrant spice trails, and tranquil <br>Ayurvedic sanctuaries.</p> <br><br>
 
         <div class="twobtn">
-            <button style="background-color: #e17902; border-radius: 16px; border: none; width: 110px; height: 60px;"><a
+            <button class="btn1" style="background-color: #e17902; border-radius: 16px; border: none; width: 110px; height: 60px;"><a
                     style="text-decoration: none;color: #0A191F;  " href=""> Explore <br> journeys ↗</a></button>
             <div><button
                     style="background-color: rgba(10,25, 31,0.64); border-radius: 16px; border: none; width: 200px; height: 60px; color: #e17902;"><a
@@ -713,13 +860,14 @@
 
 
 
-        </div>
+        </div><br><br>
 
         <div class="visod">
-            <p>Visual Odyssey</p>
-            <h1>Vibrant Moments in God's Own Country</h1>
-            <p>A photographic window into mist-laden tea ridges, gilded backwater horizons, and radiant cultural
-                enactments.</p>
+            <div class="visod2">
+            <p style="color: #e17902;">Visual Odyssey</p>
+            <h1 style="color: #C5C0B5;font-family: 'Playfair Display', serif;">Vibrant Moments in God's Own Country</h1>
+            <p style="color: #C5C0B5;">A photographic window into mist-laden tea ridges, gilded backwater horizons, and radiant cultural
+                enactments.</p></div>
 
             <div class="imgflx">
 
@@ -786,9 +934,9 @@
 
             </div><br><br><b></b>
             <div class="h6">
-                <h6>Personalized Itineraries</h6>
-                <h1>Plan Your Bespoke Voyage</h1>
-                <p>Connect with our Kerala travel concierges to tailor private houseboat cruises, plantation stays, and
+                <h6 style="color: #e17902;">Personalized Itineraries</h6>
+                <h1 style="color: #C5C0B5;font-family: 'Playfair Display', serif;">Plan Your Bespoke Voyage</h1>
+                <p style="color: #C5C0B5;">Connect with our Kerala travel concierges to tailor private houseboat cruises, plantation stays, and
                     cultural expeditions.</p>
             </div>
 
@@ -808,7 +956,7 @@
                     <div class="cont2">
                         <div>
                              <h6>Phone Number</h6>
-                        <input style="width: 285px; height: 40px;border: 1px solid #9A7045;background-color: #292A25;border-radius: 13px;" type="number">
+                        <input maxlength="10" style="width: 285px; height: 40px;border: 1px solid #9A7045;background-color: #292A25;border-radius: 13px;" type="tel">
                         </div>
                        
                     
@@ -836,10 +984,78 @@
                 
 
             </div>
+
+            <div class="grp2">
+                <div class="phnmbr">
+                    <h6 style="color: #FF9417;">Direct Telephone</h6>
+                    <p style="color: #C5C0B5;">+91 687577090</p>
+                    <p style="color: #C5C0B5;">Available 24/7 for bespoke guest consultations</p>
+                </div><br><br>
+                <div class="mail">
+                    <h6 style="color:#FF9417 ;">Curated Inquiries</h6>
+                    <p style="color: #C5C0B5;">concierge@explorekerala.luxury</p>
+                    <p style="color: #C5C0B5;">Guaranteed itinerary reply within two hours</p>
+                </div><br><br>
+                <div class="loctn">
+                    <h6 style="color: #FF9417;">Fort Kochi Pavilion</h6>
+                    <p style="color: #C5C0B5;">Colonial Spice Quays, Kochi</p>
+                    <p style="color: #C5C0B5;">Calvathy Road, Fort Kochi, Kerala 682001, India.</p>
+                </div>
+            </div>
             </div>
 
         </div>
     </div>
+
+<footer class="footer">
+
+    <div class="footer-top">
+
+        <!-- Logo and Description -->
+        <div class="footer-brand">
+            <h2>♧ Explore Kerala</h2>
+            <p>
+                Unveiling God's Own Country in timeless luxury.
+                Celebrating pristine waterways, mist-wrapped peaks,
+                and ancestral arts.
+            </p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="#"><i class="fa-solid fa-camera"></i></a>
+            <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-regular fa-message"></i></a>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <!-- Footer Navigation -->
+    <div class="footer-links">
+        <a href="#gallery">Editorial Journal</a>
+        <a href="#packages">Curated Villas</a>
+        <a href="#packages">Houseboat Charters</a>
+        <a href="#packages">Ayurvedic Retreats</a>
+        <a href="#about">Privacy Protocol</a>
+        <a href="#contact">Concierge Inquiries</a>
+    </div>
+
+    <hr>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+        <p>© 2025 Explore Kerala Luxury Journeys. All rights reserved.</p>
+
+        <span>
+            ◎ 100% CERTIFIED ECO-RESPONSIBLE VOYAGES
+        </span>
+    </div>
+
+</footer>
+
 
 </body>
 
